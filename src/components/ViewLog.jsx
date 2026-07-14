@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import NavigationBar from './NavigationBar'
 
 const ViewLog = () => {
     const[data,changeData]=useState([])
@@ -24,14 +25,13 @@ const ViewLog = () => {
     )
   return (
     <div>
-
+<NavigationBar/>
 <table class="table">
             <thead>
                 <tr>
                     <th scope="col">Name</th>
                     <th scope="col">Department</th>
                     <th scope="col">Semester</th>
-                    <th scope="col">deestination</th>
                     <th scope="col">Course</th>
                     <th scope="col">SystemNumber</th>
                     <th scope="col">LoginTime</th>
