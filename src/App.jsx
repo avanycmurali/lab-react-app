@@ -13,12 +13,9 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
-      <Routes>
-        <Route path='/'element={<AddLog/>}/>
-        <Route path='/view'element={<ViewLog/>}/>
-      </Routes>
-      </BrowserRouter>
+     <AddLog/>
+     <ViewLog/>
+     <NavigationBar/>
     </>
   )
 }
