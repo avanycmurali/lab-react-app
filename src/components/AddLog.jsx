@@ -20,7 +20,7 @@ const AddLog = () => {
     }
     const readValue=()=>{
         console.log(input)
-        axios.post("http://localhost:3000/lab-entry").then(
+        axios.post("http://localhost:3000/lab-entry",input).then(
 
             (response)=>{
                 alert("lab login added")
